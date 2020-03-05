@@ -78,10 +78,10 @@ namespace NuGetGallery.Authentication.Providers.AzureActiveDirectoryV2
             var siteRoot = config.Current.SiteRoot.TrimEnd('/') + "/";
             
             // We *always* require SSL for Authentication
-            if (siteRoot.StartsWith("http://", StringComparison.OrdinalIgnoreCase)) 
-            {
-                siteRoot = siteRoot.Replace("http://", "https://");
-            }
+            //if (siteRoot.StartsWith("http://", StringComparison.OrdinalIgnoreCase)) 
+            //{
+            //    siteRoot = siteRoot.Replace("http://", "https://");
+            //}
 
             if (!string.IsNullOrWhiteSpace(config.Current.AlternateSiteRootList))
             {

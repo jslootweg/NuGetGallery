@@ -40,6 +40,9 @@ function Initialize-EF6Exe() {
 function Update-NuGetDatabases([string] $EF6ExePath, [string] $NuGetGallerySitePath, [string[]] $MigrationTargets) {
     [string] $binariesPath = [System.IO.Path]::Combine($NuGetGallerySitePath, 'bin')
     [string] $webConfigPath = [System.IO.Path]::Combine($NuGetGallerySitePath, 'web.config')
+	
+	Write-Host "Web.config Path : $webConfigPath"
+	
     if ($MigrationTargets.Contains('NuGetGallery')) {
         Write-Host 'Updating NuGet Gallery database...'
         & $EF6ExePath database update --assembly (Join-Path $binariesPath "NuGetGallery.dll") --migrations-config MigrationsConfiguration --config $webConfigPath
