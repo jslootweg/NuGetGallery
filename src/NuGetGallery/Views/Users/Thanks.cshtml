@@ -12,7 +12,7 @@
             </h1>
         </div>
         <div class="@ViewHelpers.GetColumnClasses(ViewBag)">
-            <p class="ms-fontSize-xl">Welcome @CurrentUser.Username! Now that you have a NuGet.org account, let's get you started!</p>
+            <p class="ms-fontSize-xl">Welcome @CurrentUser.Username! Now that you have a @(Config.Current.Brand) account, let's get you started!</p>
 
             @if (!CurrentUser.Confirmed)
             {

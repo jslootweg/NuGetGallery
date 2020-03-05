@@ -16,7 +16,7 @@
     <RootNamespace>NuGetGallery</RootNamespace>
     <AssemblyName>NuGetGallery</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <OldToolsVersion>12.0</OldToolsVersion>
     <TargetFrameworkProfile />
@@ -1275,6 +1275,7 @@
     <Content Include="Content\fabric.css" />
     <Content Include="Content\gallery\img\feedback-40x130.png" />
     <Content Include="Content\gallery\img\feedback.svg" />
+    <Content Include="Content\gallery\img\Jemmac_logo_dropshadow.svg" />
     <Content Include="Content\gallery\img\logo-og-600x600.png" />
     <Content Include="Content\gallery\img\rss-24x24.png" />
     <Content Include="Content\Images\icons\apiKey.png" />
@@ -2376,11 +2377,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>80</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost</IISUrl>
+          <IISUrl>http://localhost/NuGetGallery</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
